@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/all.min.css" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./dist/images/logo.png"
+      type="image/x-icon"
+    />
+    <title>Zeke Store</title>
+  </head>
+  <body class="bg-[#62272d] text-white">
+    <div id="pageWrapper" class="flex flex-wrap">
+      <div class="placeholder w-1/12 bg-blue-600">&nbsp;</div>
+      <div id="pageContent" class="w-10/12 bg-green-600">
+        <div class="container p-4">
+          <header class="flex items-center">
+            <h2 class="w-1/2">Greetings, <span id="userName">S0NA</span></h2>
+            <div
+              id="searchContainer"
+              class="flex items-center gap-2 w-1/3 bg-[#502126] rounded-full py-2 px-4"
+            >
+              <i class="fa-solid fa-magnifying-glass text-[#cf9ea3]"></i>
+              <input
+                type="text"
+                id="searchInput"
+                class="flex-grow bg-transparent focus:outline-none placeholder:text-[#cf9ea3] min-w-0"
+                placeholder="search here"
+              />
+            </div>
+
+            <div id="cartNNotifications" class="ms-auto flex gap-2">
+              <div id="cartBtn" class="icon-container">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <div id="cartBtn" class="icon-container unread-notification">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+            </div>
+          </header>
+          <main class="flex flex-wrap py-4">
+            <div
+              id="featuredGame"
+              class="relative flex flex-col gap-4 rounded-3xl px-4 py-6 w-2/3 bg-gradient-to-b from-[#c44444] to-[#c85f55]"
+            >
+              <div class="flex gap-2">
+                <div class="popular">
+                  <i class="fa-solid fa-fire"></i> Popular
+                </div>
+                <div class="icon-container">
+                  <i class="fa-brands fa-steam"></i>
+                </div>
+                <div class="icon-container">
+                  <img src="./dist/images/riot-logo.ico" width="20" alt="" />
+                </div>
+              </div>
+              <h2 class="text-5xl font-bold">Valorant</h2>
+              <p class="w-1/2">
+                Valorant is a multiplayer computer game developed and published
+                by Riot Games. Valorant is Riot Games' first first-person
+                shooter game.
+              </p>
+              <div id="featuredGameReviews" class="flex flex-wrap">
+                <div class="users flex flex-wrap">
+                  <div class="user-pic-container"></div>
+                  <div class="user-pic-container relative -start-4"></div>
+                  <div class="user-pic-container relative -start-8"></div>
+                </div>
+                <div
+                  id="moreReviews"
+                  class="popular font-bold text-[#351417] relative -start-6"
+                >
+                  <i class="fa-solid fa-thumbs-up"></i> +53 reviews
+                </div>
+              </div>
+              <div id="featuredGameImage" class="absolute bottom-0 -end-5">
+                <img src="./dist/images/clipped-gekko.png" class="lg:w-[450px]" alt="" />
+              </div>
+            </div>
+            <div id="featuredGamesList" class="w-1/3 bg-blue-400">a</div>
+          </main>
+        </div>
+      </div>
+      <div class="placeholder w-1/12 bg-blue-600"></div>
+    </div>
+    <script src="./dist/js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
