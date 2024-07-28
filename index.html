@@ -28,11 +28,12 @@
             <i class="fa-solid fa-house"></i> <span>Home</span>
           </li>
           <li class="nav-link">
-            <i class="fa-solid fa-gamepad"></i><span>Library</span>
-          </li>
-          <li class="nav-link">
             <i class="fa-solid fa-shop"></i> <span>Store</span>
           </li>
+          <li class="nav-link">
+            <i class="fa-solid fa-gamepad"></i><span>Library</span>
+          </li>
+
           <li class="nav-link">
             <i class="fa-solid fa-user-group"></i>
             <span>Friends</span>
@@ -75,79 +76,135 @@
               </div>
             </div>
           </header>
-          <main class="flex flex-wrap py-4">
-            <div
-              id="featuredGame"
-              class="relative flex flex-col gap-4 rounded-3xl px-4 py-6 w-2/3 bg-gradient-to-b from-[#c44444] to-[#c85f55] shadow-lg"
-            >
-              <div class="flex gap-2">
-                <div class="popular">
-                  <i class="fa-solid fa-fire"></i> Popular
+          <main class="py-4 flex flex-col gap-4">
+            <div class="row">
+              <div
+                id="featuredGame"
+                class="relative flex flex-col gap-4 rounded-3xl px-4 py-6 w-2/3 bg-gradient-to-b from-[#c44444] to-[#c85f55] shadow-lg"
+              >
+                <div class="flex gap-2">
+                  <div class="popular">
+                    <i class="fa-solid fa-fire"></i> Popular
+                  </div>
+                  <div class="icon-container">
+                    <i class="fa-brands fa-steam"></i>
+                  </div>
+                  <div class="icon-container">
+                    <img src="./dist/images/riot-logo.ico" width="20" alt="" />
+                  </div>
                 </div>
-                <div class="icon-container">
-                  <i class="fa-brands fa-steam"></i>
+                <h2 class="text-5xl font-bold">Valorant</h2>
+                <p class="w-1/2">
+                  Valorant is a multiplayer computer game developed and
+                  published by Riot Games. Valorant is Riot Games' first
+                  first-person shooter game.
+                </p>
+                <div id="featuredGameReviews" class="flex flex-wrap">
+                  <div class="users flex flex-wrap">
+                    <div class="user-pic-container"></div>
+                    <div class="user-pic-container relative -start-4"></div>
+                    <div class="user-pic-container relative -start-8"></div>
+                  </div>
+                  <div
+                    id="moreReviews"
+                    class="popular font-bold text-[#351417] relative -start-6"
+                  >
+                    <i class="fa-solid fa-thumbs-up"></i> +53 reviews
+                  </div>
                 </div>
-                <div class="icon-container">
-                  <img src="./dist/images/riot-logo.ico" width="20" alt="" />
-                </div>
-              </div>
-              <h2 class="text-5xl font-bold">Valorant</h2>
-              <p class="w-1/2">
-                Valorant is a multiplayer computer game developed and published
-                by Riot Games. Valorant is Riot Games' first first-person
-                shooter game.
-              </p>
-              <div id="featuredGameReviews" class="flex flex-wrap">
-                <div class="users flex flex-wrap">
-                  <div class="user-pic-container"></div>
-                  <div class="user-pic-container relative -start-4"></div>
-                  <div class="user-pic-container relative -start-8"></div>
-                </div>
+
                 <div
-                  id="moreReviews"
-                  class="popular font-bold text-[#351417] relative -start-6"
-                >
-                  <i class="fa-solid fa-thumbs-up"></i> +53 reviews
-                </div>
+                  class="w-[50%] max-w-[400px] h-[110%] absolute bottom-0 -end-1 bg-[url('../images/clipped-gekko.png')] bg-cover"
+                ></div>
               </div>
-              <div id="featuredGameImage" class="absolute bottom-0 -end-5">
-                <img
-                  src="./dist/images/clipped-gekko.png"
-                  class="lg:w-[450px]"
-                  alt=""
-                />
+              <div id="featuredGamesList" class="w-1/3 p-6">
+                <div
+                  class="inner flex flex-col justify-around items-center h-full gap-2"
+                >
+                  <div class="game-item">
+                    <div class="game-pic">
+                      <img
+                        src="https://yt3.googleusercontent.com/4yd18H4ALHVFfjPPAnOYviNXm2dmQcR2dZru10wXA3ZkPJRkEV6yCuIodHnhJGG2e6mCGio=s900-c-k-c0x00ffffff-no-rj"
+                        alt=""
+                      />
+                    </div>
+                    <p class="game-name">Valorant</p>
+                  </div>
+                  <div class="game-item">
+                    <div class="game-pic">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="game-name">Red Dead Redemption 2</p>
+                  </div>
+                  <div class="game-item">
+                    <div class="game-pic">
+                      <img
+                        src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/capsule_616x353.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="game-name">Lethal Company</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div id="featuredGamesList" class="w-1/3 p-6">
-              <div
-                class="inner flex flex-col justify-around items-center h-full gap-2"
-              >
-                <div class="game-item">
-                  <div class="game-pic">
-                    <img
-                      src="https://yt3.googleusercontent.com/4yd18H4ALHVFfjPPAnOYviNXm2dmQcR2dZru10wXA3ZkPJRkEV6yCuIodHnhJGG2e6mCGio=s900-c-k-c0x00ffffff-no-rj"
-                      alt=""
-                    />
+            <div class="row">
+              <div class="w-2/3">
+                <div class="inner  overflow-hidden">
+                  <!-- ^ Games slider -->
+                  <div class="flex justify-between mb-2">
+                    <h2 class="sub-header">New Games</h2>
+                    <button class="see-more">See More</button>
                   </div>
-                  <p class="game-name">Valorant</p>
+                  <div class="flex gap-16 relative">
+                    <div class="new-game">
+                      <img
+                        src="./dist/images/uncharted4.png"
+                        width="250"
+                        alt=""
+                        class="max-w-max"
+                      />
+                    </div>
+                    <div class="new-game">
+                      <img
+                        src="./dist/images/uncharted4.png"
+                        width="250"
+                        alt=""
+                        class="max-w-max"
+                      />
+                    </div>
+                    <div class="new-game">
+                      <img
+                        src="./dist/images/uncharted4.png"
+                        width="250"
+                        alt=""
+                        class="max-w-max"
+                      />
+                    </div>
+                    <div class="new-game">
+                      <img
+                        src="./dist/images/uncharted4.png"
+                        width="250"
+                        alt=""
+                        class="max-w-max"
+                      />
+                    </div>
+                    <div
+                      class="right-slider absolute end-0 top-0 bottom-0 flex items-center justify-end bg-gradient-to-l from-[#62272d] from-10% to-transparent w-[200px]"
+                    >
+                      <i
+                        class="fa-solid fa-circle-chevron-right text-3xl me-2"
+                      ></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="game-item">
-                  <div class="game-pic">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <p class="game-name">Red Dead Redemption 2</p>
-                </div>
-                <div class="game-item">
-                  <div class="game-pic">
-                    <img
-                      src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/capsule_616x353.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <p class="game-name">Lethal Company</p>
+              </div>
+              <div class="w-1/3">
+                <div class="inner">
+                  <!-- ^        statistics -->
                 </div>
               </div>
             </div>
